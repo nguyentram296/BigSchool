@@ -15,6 +15,9 @@ namespace BigSchool.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+        /// <summary>
+        /// chu thich
+        /// </summary>
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
