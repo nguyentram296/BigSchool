@@ -6,8 +6,7 @@
 @using (Html.BeginForm("Create", "Courses"))
 {
 
-<h2>Create</h2>
-<form>
+
 
     <div class="form-group">
         @Html.LabelFor(m => m.Place)
@@ -31,5 +30,5 @@
         @Html.ValidationMessageFor(m=>m.Category)
     </div>
     <button type="submit" value="Save" class="btn btn-primary">Save</button>
-</form>
+
 }
