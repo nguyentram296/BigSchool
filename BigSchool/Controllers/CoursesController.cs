@@ -20,6 +20,7 @@ namespace BigSchool.Controllers
             // GET: Courses
             [Authorize]
         [HttpPost]
+        //[ValidateAntiForgeryToken]
 
         public ActionResult Create() //doan nay co can khong????
         {
