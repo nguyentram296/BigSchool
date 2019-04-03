@@ -21,7 +21,7 @@ namespace BigSchool.Controllers
             [Authorize]
         [HttpPost]
 
-        public ActionResult Create()
+        public ActionResult Create() //doan nay co can khong????
         {
             var viewModel = new CourseViewModel
             {
