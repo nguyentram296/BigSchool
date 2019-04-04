@@ -16,7 +16,7 @@ namespace BigSchool.Controllers
             _dbContext = new ApplicationDbContext();
         }
        
-        public ActionResult Index()
+        public ActionResult Index() /*toi doan nay loi ?!?* trang 30*/
         {
             var upcommingCourse = _dbContext.Courses
                 .Include(c => c.Lecturer)
