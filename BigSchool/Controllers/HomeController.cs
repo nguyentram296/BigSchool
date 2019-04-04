@@ -16,12 +16,12 @@ namespace BigSchool.Controllers
             _dbContext = new ApplicationDbContext();
         }
        
-        public ActionResult Index() /*toi doan nay loi ?!?* trang 30*/
+        public ActionResult Index() 
         {
             var upcommingCourse = _dbContext.Courses
                 .Include(c => c.Lecturer)
                 .Include(c => c.Category)
-                .Include(c => c.DateTime > DateTime.Now);
+                .Where(c => c.DateTime > DateTime.Now);
             return View(upcommingCourse);
         }
 

@@ -19,10 +19,9 @@ namespace BigSchool.Controllers
         }
             // GET: Courses
             [Authorize]
-        [HttpPost]
-        //[ValidateAntiForgeryToken]
+        
 
-        public ActionResult Create() //doan nay co can khong????
+        public ActionResult Create()
         {
             var viewModel = new CourseViewModel
             {
@@ -30,6 +29,9 @@ namespace BigSchool.Controllers
             };
             return View(viewModel);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
         {
             if (!ModelState.IsValid)
