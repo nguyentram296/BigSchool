@@ -14,7 +14,7 @@ namespace BigSchool.Controllers
     public class AttendancesController : ApiController
     {
         private ApplicationDbContext _dbContext;
-        private int courseId;
+       
 
         public AttendancesController()
         {
