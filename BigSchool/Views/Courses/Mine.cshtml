@@ -39,9 +39,10 @@
         $(".js-cancel-course").click(function (e) {
             e.preventDefault();
             var link = $(e.target);
-            bootbox.confirm("Are you sure to cancel?", function () {
+            bootbox.confirm("Are you sure to cancel?",
+                function () {
                 $.ajax({
-                    url: "/api/courses/" + link.attr("data-course-id),
+                    url: "/api/courses/" + link.attr("data-course-id"),
                         method: "DELETE"
                 })
                     .done(function () {
